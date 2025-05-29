@@ -25,6 +25,7 @@ let addResult = function (re) {
             p.innerHTML= `<b>${r.title}</b>`;
             info.innerHTML = "<b>GET RECIPES</b>";
             info.classList.add(i);
+            info.classList.add("res");
             newdiv.appendChild(img);
             newdiv.appendChild(p);
             newdiv.appendChild(info);
