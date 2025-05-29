@@ -1,7 +1,6 @@
 const dish = document.querySelector(".dish");
 const btn = document.querySelector(".btn");
-const result = document.querySelector(".res");
-const body = document.querySelector("body");
+const body = document.querySelector(".recipes");
 
 btn.addEventListener("click",()=>{
     let d = dish.value;
@@ -11,8 +10,6 @@ btn.addEventListener("click",()=>{
             addResult(res.results);
         })
 });
-
-// const recipes = `https://api.spoonacular.com/recipes/${}/analyzedInstructions?query=coffee&number=5&apiKey=abd82cf4e2b048c5a93a7388821bbdfa`;
 
 let addResult = function (re) {
     let i = 0;
