@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Recipis</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Recipes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        Enter the dish-name : 
-    <input class="dish" type="text" >
-    <button class="btn">GET</button>
+  <header>
+    <h1>Get Delicious Recipes</h1>
+  </header>
+  <main>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search recipes...">
+      <button onclick="searchRecipes()">Search</button>
     </div>
-    <div class="res"></div>
-
-    <script src="app.js"></script>
+    <div class="recipes" id="recipesList">
+      <!-- Recipe cards will be inserted here by JavaScript -->
+    </div>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>
